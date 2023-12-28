@@ -1,0 +1,567 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eb775c;
+      }
+
+      .cls-2 {
+        fill: #fcc10a;
+      }
+
+      .cls-3 {
+        fill: #294b9b;
+      }
+
+      .cls-4 {
+        fill: #9f5a41;
+      }
+
+      .cls-5 {
+        fill: #64a5da;
+      }
+
+      .cls-6 {
+        fill: #616160;
+      }
+
+      .cls-7 {
+        fill: #eac6a0;
+      }
+
+      .cls-8 {
+        fill: #e96b60;
+      }
+
+      .cls-9 {
+        fill: #f2af97;
+      }
+
+      .cls-10 {
+        fill: #080405;
+      }
+
+      .cls-11 {
+        fill: #eaba94;
+      }
+
+      .cls-12 {
+        fill: #f1975b;
+      }
+
+      .cls-13 {
+        fill: #77151e;
+      }
+
+      .cls-14 {
+        fill: #cb724d;
+      }
+
+      .cls-15 {
+        fill: #c47c3a;
+      }
+
+      .cls-16 {
+        fill: #d43616;
+      }
+
+      .cls-17 {
+        fill: #edaba9;
+      }
+
+      .cls-18 {
+        fill: #fae5e1;
+      }
+
+      .cls-19 {
+        fill: #eb5a5b;
+      }
+
+      .cls-20 {
+        fill: #e64c54;
+      }
+
+      .cls-21 {
+        fill: #f3975b;
+      }
+
+      .cls-22 {
+        fill: #ea9f04;
+      }
+
+      .cls-23 {
+        fill: #bc9fa2;
+      }
+
+      .cls-24 {
+        fill: #edbebc;
+      }
+
+      .cls-25 {
+        fill: #ed9e94;
+      }
+
+      .cls-26 {
+        fill: #f9f0d7;
+      }
+
+      .cls-27 {
+        fill: #f9ecc7;
+      }
+                     #eyebrows {
+        animation: eyebrowsmove 4s linear infinite;
+      }
+
+          @keyframes eyebrowsmove {
+      0% {
+          transform: translate(0%, 0%);
+      }
+      50% {
+        transform: translate(0%, -2%);
+      }
+      100% {
+          transform: translate(0%, 0.2%);
+      }
+    }
+
+      #face_color, #facemain, #facesplit, #eyes, #hair_strands, #spiral_hair, #earsline, #face_pattern, #front_hair {
+        animation: MoveUpDown 4s linear infinite;
+      }
+
+          @keyframes MoveUpDown {
+      0% {
+          transform: translate(0%, 0%);
+      }
+      50% {
+        transform: translate(0%, -1%);
+      }
+      80% {
+          transform: translate(0%, 0.2%);
+      }
+      100% {
+          transform: translate(0%, 0%);
+      }
+
+    } 
+
+      #clothes_pattern, #clothe_bottom, #shirt {
+        animation: ClothesMoveUpDown 5s linear infinite;
+      }
+
+          @keyframes ClothesMoveUpDown {
+      0% {
+          transform: translate(0%, 0%);
+      }
+      50% {
+        transform: translate(0%, 1.2%);
+      }
+      100% {
+          transform: translate(0%, 0%);
+      }
+    } 
+
+
+  #face_pattern, #clothes_pattern, #line_pattern_bg, #background_pattern  
+   {}
+
+      #clothes_pattern, #line_pattern_bg {
+    stroke-dasharray: 8;
+    stroke-dashoffset: 0;
+    animation: symbolsmove 1s ease-in-out 0s forwards infinite;
+    }
+
+@keyframes symbolsmove {
+    0% {
+        stroke-dashoffset: 10;
+        stroke: orange;
+
+    }
+    50% {
+        stroke-dashoffset: 8;
+       stroke: 0px;
+    }
+
+        100% {
+        stroke-dashoffset: 10;
+        stroke: orange;
+        }
+     } 
+
+         #mouth, #hair_shadow {
+        animation: mouthanimate 4s ease infinite alternate;
+        transform-origin: center;
+
+      }
+
+          @keyframes mouthanimate {  
+    0% {
+        transform: scaleX(1) translate(0%, -0.6%);
+    }
+    50% {
+        transform: scaleX(1.1) translate(0%, -1%);
+    }
+    100% {
+        transform: scaleX(1) translate(0%, 0%);
+    }
+
+ }
+
+  #circle_background{
+          animation: circle 7s ease infinite alternate;
+          transform-origin: center;
+ stroke-dasharray: 8;
+    stroke-dashoffset: 0;
+        }
+        
+        @keyframes circle{
+      0% {
+          transform: scale(1);
+      }
+      30% {
+          transform: scale(0.9);;
+      }
+      40% {
+          transform: scale(1);
+      }
+  }
+
+      #tears_bg {
+        animation: 5s tears_fall
+        ease-in-out 0s forwards infinite;
+            stroke-width:2px;
+            stroke-dasharray: 20;
+            stroke-dashoffset: 0;
+      }
+      @keyframes tears_fall {
+     0% {
+          transform: translate(0%, 0%);
+          stroke-dashoffset: 40;
+          stroke: #EB775C;
+      }
+      50% {
+        transform: translate(0%, 2%);
+        stroke-dashoffset: 10;
+        stroke: 0px;
+      }
+      100% {
+          transform: translate(0%, 0%);
+          stroke-dashoffset: 40;
+         stroke: #EB775C;
+      }
+    }
+
+
+    #cheek_stripes
+     {
+        animation: 5s
+        infinite alternate a;
+
+      }
+      @keyframes a {
+     0% {
+          transform: translate(0%, 0%);
+          opacity:0.5;
+      }
+      100% {
+          opacity:1;
+          transform: translate(0%, -2%)
+      }
+    }
+
+      #spiral_hair {
+    fill-opacity:0;
+    stroke-width:2px;
+    stroke-dasharray: 20;
+    stroke-dashoffset: 0;
+    animation: hair_spiral 1s ease-in-out 0s forwards infinite;
+    }
+
+@keyframes hair_spiral {
+    0% {
+        stroke-dashoffset: 20;
+        stroke: #1D181D;
+
+    }
+    50% {
+        stroke-dashoffset: 10;
+       stroke: 0px;
+    }
+
+          100% {
+        stroke-dashoffset: 20;
+        stroke: #1D181D;
+        }
+     } 
+
+      #face_pattern
+ {
+    fill-opacity:1;
+    stroke-width:1px;
+    stroke-dasharray: 20;
+    stroke-dashoffset: 0;
+    animation: face_pattern_animate 1s ease-in-out 0s forwards infinite;
+    }
+
+@keyframes face_pattern_animate {
+    0% {
+        stroke-dashoffset: 20;
+        stroke: #A61800;
+
+    }
+    50% {
+        stroke-dashoffset: 10;
+       stroke: 0px;
+    }
+
+        100% {
+        stroke-dashoffset: 20;
+        stroke: #A61800;
+        }
+     } 
+
+    </style>
+  </defs>
+  <g id="background_color" data-name="background color">
+    <rect class="cls-1" x="0.62" y="0.61" width="400" height="400"/>
+  </g>
+  <g id="circle_background" data-name="circle background">
+    <circle class="cls-2" cx="199.14" cy="199.88" r="180.75"/>
+     <g>
+      <polyline class="cls-1" points="50.27 50.04 13.67 108.12 50.27 108.12"/>
+      <polyline class="cls-1" points="50.27 50.04 86.86 108.12 50.27 108.12"/>
+    </g>
+  </g>
+  <g id="hair_shadow" data-name="hair shadow">
+    <path class="cls-3" d="M240.21,96.22,260.9,142.3s-34.86-1.12-43.19,1.82c-8.51-21.34-9.92-23.14-9.92-23.14L213,144.12s-13.31.36-23.34,3.68l-10,3.32-11.72-18-21-50.73S184.69,68,208.82,74.23s54.87,34.67,54.87,34.67,18.91,53.35,25.6,64.26"/>
+  </g>
+  <g id="hair_behind" data-name="hair behind">
+    <path class="cls-4" d="M171.66,38.07c-17.16,3.62-64.88,52.3-64.88,52.3L89.05,170.19l7.25,32.39,13.61,17.92s-14.07,17.38-8.52,27.22c4.68,8.29,21.67,17.13,19.56,17.13L103.51,246l5.3-11.12,14.25-12.8s2.57,7.13,2.91,22.51,18.63,39.79,18.63,39.79l-12.54-34.57"/>
+    <path class="cls-4" d="M223.59,37.87s88.68,63.93,78.71,104.52,8.42,81.18-8.71,97.55l-17.12,16.37s19.85-16.71,17.12-27.83a126.27,126.27,0,0,0-6.07-18.73l-16.64,34.57-20.65,4.39"/>
+    <polyline class="cls-3" points="95.21 142.44 92.63 170.43 111.45 218.91 134.06 222.67 127.23 139.7 100.57 124.95 95.23 139.7"/>
+    <polyline class="cls-3" points="293.19 137.43 295.78 165.42 270.45 230.66 250.23 248.71 261.18 134.69 276 104.8 293.17 134.69"/>
+  </g>
+  <g id="clothe_bottom" data-name="clothe bottom">
+    <polygon class="cls-5" points="200.99 293.13 198.26 355.44 200.99 293.13 200.99 293.13"/>
+    <polygon class="cls-5" points="141.84 310.6 155.49 289.8 32.65 355.53 18.21 399.88 196.5 399.88 198.26 359.82 200.99 297.51 141.84 310.6"/>
+    <polygon class="cls-6" points="386.3 400.26 369.55 351.06 227.05 278.14 242.88 301.21 171.09 286.02 171.07 286.28 171.07 286.28 167.91 355.4 165.85 400.26 386.3 400.26"/>
+    <polygon class="cls-6" points="141.84 310.6 155.49 289.8 32.65 355.53 18.21 399.88 196.5 399.88 198.26 359.82 200.99 297.51 141.84 310.6"/>
+    <polygon class="cls-5" points="200.99 293.13 198.26 355.44 200.99 293.13 200.99 293.13"/>
+  </g>
+  <g id="shirt">
+    <path class="cls-7" d="M261,296.46l18.41,15.72L210.9,354.3s-53.83-21.82-53.62-21.18S126,312.18,126,312.18l21.08-17.87-29.41,15.74s5.77,10.11,10.43,14.26,28.36,23.2,33,26.16,21.8,12.49,24.55,12.91S210.41,366,210.41,366l24.35-8,32.92-24.3,16-18,3.43-5.34-26.08-14"/>
+  </g>
+  <g id="neck">
+    <path class="cls-8" d="M151.75,248.92s11.34,30.25,0,41.26l-25.78,22s47.1,45.38,68.41,45.72,11.69,0,11.69,0l-1.46-92.13Z"/>
+    <path class="cls-9" d="M253.62,248.92s-11.34,30.25,0,41.26l25.78,22S232.3,357.56,211,357.9s-11.69,0-11.69,0l1.46-92.13Z"/>
+  </g>
+  <g id="neck_shadow" data-name="neck shadow">
+    <polygon class="cls-10" points="154.93 254.25 156.42 274.32 180.37 298.38 201.79 301.56 206.16 262.55 154.93 254.25"/>
+    <polygon class="cls-10" points="252.22 254.25 249.36 272.08 225.4 296.15 200.78 301.56 199.62 260.31 252.22 254.25"/>
+  </g>
+  <g id="facemain">
+    <path class="cls-11" d="M204.61,59.52S118.23,49,121.84,152.66c0,0,4.56,33.14,4.13,31.21,6.54,29.46,2.75,9.08,7.73,40.47l15,27.85s24.23,26.3,30.42,26.3h23.21"/>
+  </g>
+  <g id="facesplit">
+    <path class="cls-12" d="M195.93,59.84S283.85,49,280.24,152.66c0,0,1.12-12.41-6.61,37.61-1.81,25.82.35,4.91-5.25,34.07l-15,27.85s-24.24,26.3-30.42,26.3H199.79"/>
+  </g>
+  <g id="face_color" data-name="face color">
+    <path class="cls-13" d="M278.77,160.79S309,138,301.21,182c-18.56,35.41-12,39.07-34.73,43.16"/>
+    <path class="cls-8" d="M148,161.11c-1.56.2-29.1-4.49-7.91,31.09s48.86,12.5,48.86,12.5,8.68,10.09,15,6.45c3.42-46.11,3.42-44.82,3.42-44.82"/>
+    <path class="cls-13" d="M134.55,225.15c-22.69-4.09-16.17-7.75-34.73-43.16-7.74-44,22.43-21.2,22.43-21.2"/>
+    <path class="cls-8" d="M256.5,160.37c1.56.21,29.1-4.48,7.91,31.09S215.55,204,215.55,204s-8.68,10.1-15,6.46c-3.42-46.11-3.42-44.83-3.42-44.83"/>
+  </g>
+  <g id="earsline">
+    <polyline points="272.43 190.27 272.33 190.85 268.43 213.33 284.42 199.12 272.17 206.77 286.99 175.78"/>
+    <polyline points="129.21 190.9 129.31 191.47 133.21 213.96 117.22 199.74 129.47 207.39 114.64 176.41"/>
+  </g>
+  <g id="mouth">
+    <polyline class="cls-10" points="178.5 247.72 200.74 238.95 222.66 247.72"/>
+  </g>
+  <g id="front_hair" data-name="front hair">
+    <path class="cls-14" d="M197.13,40.75S169.51,24.42,150,43.65s-52.13,86.74-52.13,86.74l24.36,30.4s-3.34-23.19,2.49-39.84c7.88-22.55,23-23,39.9-32.31S194.45,58.8,194.45,58.8Z"/>
+    <path class="cls-15" d="M195.47,39s25.69-16.64,45.18,2.58,46,53.84,46,53.84L279.77,145a140.71,140.71,0,0,0-1.41-22.46c-3.26-23.67-37.88-10.47-54.77-19.78s-27.66-30.06-27.66-30.06Z"/>
+    <path class="cls-14" d="M187.62,76.91s23.76,37.51,23,39.2,21.55,14.28,21.55,14.28l-13.06-16.31-8.49-33.57L196.73,42.16l-14.29,7.91V66.64Z"/>
+  </g>
+  <g id="eyebrows">
+    <path class="cls-16" d="M215.32,132.41l6.82-8.26s19.47-6.31,35.2,6.19,13.11,11,13.11,11-21-11.28-32.45-10.5Z"/>
+    <path class="cls-16" d="M185.88,132.41l-6.81-8.26s-19.47-6.31-35.2,6.19-13.12,11-13.12,11,21-11.28,32.46-10.5Z"/>
+  </g>
+  <g id="hair_strands" data-name="hair strands">
+    <path class="cls-11" d="M127.26,93.92c-5.48,1.88-19.67,25.19-9.62,40.27-3-17.94,9.62-40.27,9.62-40.27"/>
+    <path class="cls-11" d="M136.26,93.92s-14.7,25.9-14.53,52.47c-9-26.23,14.53-52.47,14.53-52.47"/>
+    <path class="cls-4" d="M195.45,39.79s34.27,18.67,37,42.6c-11.44-22.4-37-42.6-37-42.6"/>
+    <path class="cls-4" d="M229.62,61.2s-10.93-21.78-25.8-24c13.73,7.62,25.8,24,25.8,24"/>
+    <path class="cls-11" d="M266.48,100.63s18.37,23.14,13.78,41.8c-1.77-19.84-13.78-41.8-13.78-41.8"/>
+    <path class="cls-11" d="M281.62,125s.59-19.17-7.89-23.71c5.94,8.57,7.89,23.71,7.89,23.71"/>
+  </g>
+  <g id="cheek_stripes" data-name="cheek stripes">
+    <g>
+      <polygon class="cls-17" points="143.7 176.41 136.54 191.34 146.08 176.41 143.7 176.41"/>
+      <polyline class="cls-17" points="150.72 176.41 141.31 195.18 152.78 176.41"/>
+      <polyline class="cls-17" points="155.59 176.41 147.05 201.73 158.24 176.41"/>
+      <polyline class="cls-17" points="161.27 177.67 154.93 208.22 164.64 177.67"/>
+      <polyline class="cls-17" points="167.1 177.67 163.04 211.46 170.04 177.67"/>
+    </g>
+  </g>
+  <g id="face_pattern" data-name="face pattern">
+   
+    <g>
+      <path class="cls-13" d="M240.74,44.35,234.68,54a7.17,7.17,0,0,0,6.06,11h0"/>
+      <path class="cls-13" d="M240.74,44.35,246.8,54a7.17,7.17,0,0,1-6.06,11h0"/>
+    </g>
+    <g>
+      <rect class="cls-8" x="225.23" y="192.88" width="41.43" height="1.53"/>
+      <rect class="cls-8" x="225.23" y="198.24" width="41.43" height="1.53"/>
+      <rect class="cls-8" x="225.23" y="204.76" width="41.43" height="1.53"/>
+    </g>
+    <g>
+      <rect class="cls-18" x="287.3" y="162.53" width="31.56" height="1.16"/>
+      <rect class="cls-18" x="287.3" y="166.61" width="31.56" height="1.16"/>
+      <rect class="cls-18" x="287.3" y="171.57" width="31.56" height="1.16"/>
+    </g>
+    <g>
+      <path class="cls-19" d="M251.51,69.2a8.47,8.47,0,0,1-16.54,0h-2.05a10.32,10.32,0,1,0,20.64,0Z"/>
+      <path class="cls-19" d="M270,68.64a8.47,8.47,0,0,1-16.55,0h-2a10.32,10.32,0,1,0,20.64,0Z"/>
+    </g>
+    <g>
+      <path class="cls-20" d="M144.66,75.32a8.47,8.47,0,0,1-16.55,0h-2.05a10.33,10.33,0,0,0,20.65,0Z"/>
+      <path class="cls-20" d="M163.13,74.76a8.46,8.46,0,0,1-16.54,0h-2.05a10.32,10.32,0,1,0,20.64,0Z"/>
+    </g>
+    <g>
+      <path class="cls-21" d="M254,83.76a8.47,8.47,0,0,1-16.54,0h-2.05a10.32,10.32,0,1,0,20.64,0Z"/>
+      <path class="cls-21" d="M272.46,83.21a8.47,8.47,0,0,1-16.55,0h-2a10.33,10.33,0,0,0,20.65,0Z"/>
+    </g>
+    <path class="cls-9" d="M201.59,210c25.72-2.49,8.84-26.83,0-37.57C192.75,183.13,175.87,207.47,201.59,210Z"/>
+    <path class="cls-22" d="M288.11,209.3s4,4.36,0,7.3l-3.67,2.74a5,5,0,0,1-4.14-2.93c-1.11-2-3.63-1.41-3.63-1.41s2.1,3.77,2.67,4.81a4.75,4.75,0,0,0,4.84,2.85c2.69-.15,5.08-1.92,6.85-4s2.52-6.4,2.33-8.63-2.69-6-2.69-6Z"/>
+    <path class="cls-19" d="M282.73,218.85s5-6.26,5.38-9.55,2.72,3.34,2.4,4.55a10.68,10.68,0,0,1-2.61,4.22C286.32,219.41,283.88,219.66,282.73,218.85Z"/>
+    <path class="cls-22" d="M115,212.93s-3.09,5,1.31,7.19l4.11,2a5,5,0,0,0,3.53-3.64c.71-2.21,3.3-2.06,3.3-2.06s-1.36,4.09-1.73,5.22a4.73,4.73,0,0,1-4.23,3.69c-2.66.36-5.34-.94-7.47-2.68s-3.66-5.82-3.88-8,1.52-6.4,1.52-6.4Z"/>
+    <path class="cls-19" d="M122.07,221.33s-6-5.24-7.06-8.4-2.06,3.79-1.51,4.92a10.4,10.4,0,0,0,3.34,3.66C118.64,222.54,121.09,222.34,122.07,221.33Z"/>
+  </g>
+  <g id="clothes_pattern" data-name="clothes pattern">
+    <g>
+      <path class="cls-13" d="M294.55,367.87l-6.06,9.62a7.16,7.16,0,0,0,6.06,11h0"/>
+      <path class="cls-13" d="M294.55,367.87l6.06,9.62a7.16,7.16,0,0,1-6.06,11h0"/>
+    </g>
+    <g>
+      <path class="cls-8" d="M313,367.87,307,377.49a7.17,7.17,0,0,0,6.06,11h0"/>
+      <path class="cls-8" d="M313,367.87l6.07,9.62a7.17,7.17,0,0,1-6.07,11h0"/>
+    </g>
+    <g>
+      <path class="cls-16" d="M332.47,367.87l-6.06,9.62a7.16,7.16,0,0,0,6.06,11h0"/>
+      <path class="cls-16" d="M332.47,367.87l6.06,9.62a7.16,7.16,0,0,1-6.06,11h0"/>
+    </g>
+    <g>
+      <path class="cls-8" d="M351.14,367.87l-6.06,9.62a7.16,7.16,0,0,0,6.06,11h0"/>
+      <path class="cls-8" d="M351.14,367.87l6.07,9.62a7.17,7.17,0,0,1-6.07,11h0"/>
+    </g>
+    <g>
+      <path class="cls-23" d="M287,365.66l-5.59-8.88A6.62,6.62,0,0,1,287,346.63h0"/>
+      <path class="cls-23" d="M287,365.66l5.6-8.88a6.62,6.62,0,0,0-5.6-10.15h0"/>
+    </g>
+    <g>
+      <path class="cls-24" d="M304.11,365.66l-5.6-8.88a6.62,6.62,0,0,1,5.6-10.15h0"/>
+      <path class="cls-24" d="M304.11,365.66l5.6-8.88a6.62,6.62,0,0,0-5.6-10.15h0"/>
+    </g>
+    <g>
+      <path class="cls-25" d="M322.07,365.66l-5.6-8.88a6.62,6.62,0,0,1,5.6-10.15h0"/>
+      <path class="cls-25" d="M322.07,365.66l5.6-8.88a6.62,6.62,0,0,0-5.6-10.15h0"/>
+    </g>
+    <g>
+      <path class="cls-24" d="M339.32,365.66l-5.6-8.88a6.62,6.62,0,0,1,5.6-10.15h0"/>
+      <path class="cls-24" d="M339.32,365.66l5.6-8.88a6.62,6.62,0,0,0-5.6-10.15h0"/>
+    </g>
+    <g>
+      <rect class="cls-16" x="122.25" y="373.73" width="50.18" height="1.85"/>
+      <rect class="cls-16" x="122.25" y="380.23" width="50.18" height="1.85"/>
+      <rect class="cls-16" x="122.25" y="388.12" width="50.18" height="1.85"/>
+    </g>
+    <g>
+      <rect class="cls-1" x="10.8" y="373.13" width="101.18" height="1.85"/>
+      <rect class="cls-1" x="10.8" y="379.63" width="101.18" height="1.85"/>
+      <rect class="cls-1" x="10.8" y="387.52" width="101.18" height="1.85"/>
+    </g>
+    <g>
+      <rect class="cls-8" x="45.24" y="352.19" width="101.18" height="1.85"/>
+      <rect class="cls-8" x="45.24" y="358.69" width="101.18" height="1.85"/>
+      <rect class="cls-8" x="45.24" y="366.58" width="101.18" height="1.85"/>
+    </g>
+  </g>
+  <g id="tears_bg" data-name="tears bg">
+    <g>
+      <path class="cls-26" d="M342.3,111.39l5.05,8a6,6,0,0,1-5.05,9.16h0"/>
+      <path class="cls-26" d="M342.3,111.39l-5.06,8a6,6,0,0,0,5.06,9.16h0"/>
+    </g>
+    <g>
+      <path class="cls-26" d="M49.1,251.3l5.06,8a6,6,0,0,1-5.06,9.16h0"/>
+      <path class="cls-26" d="M49.1,251.3l-5.05,8a6,6,0,0,0,5.05,9.16h0"/>
+    </g>
+    <g>
+      <path class="cls-26" d="M353.74,126.11l7.55,12a8.93,8.93,0,0,1-7.55,13.69h0"/>
+      <path class="cls-26" d="M353.74,126.11l-7.55,12a8.93,8.93,0,0,0,7.55,13.69h0"/>
+    </g>
+    <g>
+      <path class="cls-26" d="M60.13,265.54l6.92,11a8.18,8.18,0,0,1-6.92,12.54h0"/>
+      <path class="cls-26" d="M60.13,265.54l-6.92,11a8.18,8.18,0,0,0,6.92,12.54h0"/>
+    </g>
+  </g>
+  <g id="line_pattern_bg" data-name="line pattern bg">
+    <g>
+      <rect class="cls-27" x="16.7" y="158.75" width="53.07" height="1.96" transform="translate(86.47 319.46) rotate(-180)"/>
+      <rect class="cls-27" x="16.7" y="165.62" width="53.07" height="1.96" transform="translate(86.47 333.19) rotate(-180)"/>
+      <rect class="cls-27" x="16.7" y="173.96" width="53.07" height="1.96" transform="translate(86.47 349.89) rotate(-180)"/>
+    </g>
+    <g>
+      <rect class="cls-27" x="319.72" y="214.92" width="53.07" height="1.96" transform="translate(692.5 431.8) rotate(-180)"/>
+      <rect class="cls-27" x="319.72" y="221.79" width="53.07" height="1.96" transform="translate(692.5 445.54) rotate(-180)"/>
+      <rect class="cls-27" x="319.72" y="230.14" width="53.07" height="1.96" transform="translate(692.5 462.23) rotate(-180)"/>
+    </g>
+    <g>
+      <rect class="cls-1" x="27.43" y="213.35" width="53.07" height="1.96" transform="translate(107.93 428.65) rotate(-180)"/>
+      <rect class="cls-1" x="27.43" y="220.22" width="53.07" height="1.96" transform="translate(107.93 442.39) rotate(-180)"/>
+      <rect class="cls-1" x="27.43" y="228.56" width="53.07" height="1.96" transform="translate(107.93 459.08) rotate(-180)"/>
+    </g>
+    <g>
+      <rect class="cls-1" x="336.52" y="268.75" width="53.07" height="1.96" transform="translate(726.11 539.47) rotate(-180)"/>
+      <rect class="cls-1" x="336.52" y="275.62" width="53.07" height="1.96" transform="translate(726.11 553.2) rotate(-180)"/>
+      <rect class="cls-1" x="336.52" y="283.97" width="53.07" height="1.96" transform="translate(726.11 569.89) rotate(-180)"/>
+    </g>
+  </g>
+  <g id="eyes">
+    <g>
+      <path d="M163,169.43s-14.52.21-14.89-10.36S163,148.71,163,148.71"/>
+      <path d="M163,169.43s13.62.21,14-10.36-14-10.36-14-10.36"/>
+    </g>
+    <g>
+      <path d="M189.52,160.52s-21.09-28.78-56.5-2.09C158.48,153.86,166.17,147.66,189.52,160.52Z"/>
+      <path d="M169.69,171.86s-22.53,1.72-27.59-8.28c.87,4.48-11.75,7.26-11.75,7.26l15-.07S159.61,175.16,169.69,171.86Z"/>
+    </g>
+    <g>
+      <path d="M240.74,168s13.85.22,14.2-10.81-14.2-10.82-14.2-10.82"/>
+      <path d="M240.74,168s-13,.22-13.35-10.81,13.35-10.82,13.35-10.82"/>
+    </g>
+    <g>
+      <path d="M214,159.82s21.1-28.78,56.5-2.09C245,153.16,237.31,147,214,159.82Z"/>
+      <path d="M233.78,171.15s22.54,1.73,27.59-8.28c-.87,4.49,10.36,8.95,10.36,8.95l-13.59-1.75S243.86,174.46,233.78,171.15Z"/>
+    </g>
+    <path d="M186.61,203.55s10.79,6.48,15.18,6c-.06,1.48,0,3.1,0,3.1s-11.1-2.26-15.18-8.84"/>
+    <path d="M216.77,203.55s-10.79,6.48-15.18,6c.06,1.48,0,3.1,0,3.1s11.11-2.26,15.18-8.84"/>
+  </g>
+  <g id="background_pattern" data-name="background pattern">
+    <g>
+      <path class="cls-2" d="M355.33,96.77a8.47,8.47,0,0,0,16.54,0h2.05a10.32,10.32,0,1,1-20.64,0Z"/>
+      <path class="cls-2" d="M336.85,96.22a8.47,8.47,0,0,0,16.55,0h2a10.32,10.32,0,1,1-20.64,0Z"/>
+    </g>
+    <g>
+      <path class="cls-2" d="M340.9,81.17a8.47,8.47,0,0,0,16.55,0h2a10.32,10.32,0,0,1-20.64,0Z"/>
+      <path class="cls-2" d="M322.42,80.62a8.47,8.47,0,0,0,16.55,0h2a10.33,10.33,0,0,1-20.65,0Z"/>
+    </g>
+    <g>
+      <path class="cls-2" d="M47.11,301.55a8.47,8.47,0,0,0,16.55,0h2a10.33,10.33,0,1,1-20.65,0Z"/>
+      <path class="cls-2" d="M28.64,301a8.46,8.46,0,0,0,16.54,0h2a10.32,10.32,0,0,1-20.64,0Z"/>
+    </g>
+    <g>
+      <path class="cls-2" d="M32.69,286a8.46,8.46,0,0,0,16.54,0h2.05a10.32,10.32,0,0,1-20.64,0Z"/>
+      <path class="cls-2" d="M14.21,285.4a8.47,8.47,0,0,0,16.55,0h2a10.32,10.32,0,1,1-20.64,0Z"/>
+    </g>
+  </g>
+</svg>
